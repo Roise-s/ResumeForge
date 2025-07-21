@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This project is a full-stack web app that uses AI to help users create professional resumes and cover letters.",
+  "keywords": [
+    "Resume",
+    "&",
+    "Cover",
+    "Letter",
+    "Generator"
+  ],
+  "license": "ISC",
+  "author": "Kgaugelo.dev",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
