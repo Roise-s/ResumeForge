@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 20px 50px;
+    padding: 20px 150px;
     font-size: 24px;
     color: #343a40;
     border-bottom: 1px solid #dee2e6;
@@ -10,14 +10,12 @@
     .innerName {
 
         .projectName {
-            color: #242424;
-            cursor: pointer;
-            font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
             font-weight: 600;
-            font-size: 1.5rem;
-            line-height: 1.5;
-            text-decoration: none;
+            font-style: normal;
             transition: color 0.3s ease;
+
             &:hover {
             color: #242424db;
             }
