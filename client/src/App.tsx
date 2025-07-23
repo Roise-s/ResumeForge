@@ -1,11 +1,13 @@
 import './App.css'
 import Header from './sections/Header'
+import Main from './sections/Main'
 
 function App() {
 
   return (
     <>
     <Header />
+    <Main />
     </>
   )
 }

@@ -4,8 +4,8 @@
     text-align: center;
     padding: 20px 150px;
     font-size: 24px;
-    color: #343a40;
-    border-bottom: 1px solid #dee2e6;
+    color: white;
+    border-bottom: 1px solid #dee2e6bb;
 
     .innerName {
 
@@ -25,6 +25,52 @@
     .innerBtns {
         .but {
             cursor: pointer;
+        }
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+    padding: 0 150px;
+    height: 81vh;
+    color: white;
+
+    .mainTitle {
+        font-family: "EB Garamond", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 55px;
+        font-style: normal;
+    }
+
+    .innerbtn {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        
+        .linkPass {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(29, 27, 27, 0.921);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            width: 200px;
+            height: 45px;
+            border-radius: 10px;
+            margin-left: 10px;
+            transition: all 0.5s ease;
+            
+            .icon {
+                margin-left: 5px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
