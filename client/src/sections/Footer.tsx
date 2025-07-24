@@ -5,7 +5,9 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-      <p className="myname">Kgaugelo.dev</p>
+      <a href="https://kgaugelo.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <p className="myname">Kgaugelo.dev</p>
+      </a>
       <p className="copyright">© {year} All rights reserved.</p>
     </div>
   )

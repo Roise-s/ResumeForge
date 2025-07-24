@@ -7,6 +7,11 @@
   color: white;
   border-bottom: 1px solid rgba(222, 226, 230, 0.7333333333);
 }
+@media (max-width: 520px) {
+  .header {
+    padding: 20px 10px;
+  }
+}
 .header .innerName .projectName {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -16,6 +21,11 @@
 }
 .header .innerName .projectName:hover {
   color: rgba(36, 36, 36, 0.8588235294);
+}
+@media (max-width: 768px) {
+  .header .innerBtns {
+    display: none;
+  }
 }
 .header .innerBtns .but {
   cursor: pointer;
@@ -29,12 +39,22 @@
   height: 81vh;
   color: white;
 }
+@media (max-width: 500px) {
+  .main-container {
+    padding: 10px;
+  }
+}
 .main-container .mainTitle {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-size: 55px;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .main-container .mainTitle {
+    font-size: 40px;
+  }
 }
 .main-container .innerbtn {
   display: flex;
@@ -72,4 +92,9 @@
 }
 .footer .copyright {
   margin-right: 50px;
+}
+@media (max-width: 400px) {
+  .footer .copyright {
+    display: none;
+  }
 }/*# sourceMappingURL=int.css.map */

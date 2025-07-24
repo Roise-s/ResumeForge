@@ -1,4 +1,7 @@
 .header {
+    @media (max-width: 520px) {
+        padding: 20px 10px;
+    }
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -23,6 +26,9 @@
     }
 
     .innerBtns {
+        @media (max-width: 768px) {
+            display: none;
+        }
         .but {
             cursor: pointer;
         }
@@ -30,6 +36,9 @@
 }
 
 .main-container {
+    @media (max-width: 500px) {
+        padding: 10px;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,6 +48,9 @@
     color: white;
 
     .mainTitle {
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
         font-family: "EB Garamond", serif;
         font-optical-sizing: auto;
         font-weight: 600;
@@ -86,6 +98,10 @@
     }
 
     .copyright {
+        @media (max-width: 400px) {
+            display: none;
+            
+        }
         margin-right: 50px;
     }
 }
