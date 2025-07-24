@@ -97,4 +97,10 @@
   .footer .copyright {
     display: none;
   }
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }/*# sourceMappingURL=int.css.map */
