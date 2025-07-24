@@ -59,4 +59,17 @@
 }
 .main-container .innerbtn .linkPass:hover {
   cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.footer .myname {
+  margin-left: 50px;
+}
+.footer .copyright {
+  margin-right: 50px;
 }/*# sourceMappingURL=int.css.map */
