@@ -1,5 +1,16 @@
+import { useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
+import Login from "./Login";
 
 export default function Example() {
+  const navigate = useNavigate();
+
+  const useAuthRedirect = () => {
+    const token = Cookies.get("jwt");
+    if (!token) {
+      navigate("/login");
+    }
+  }
 
   return (
     <div className="bg-white h-screen overflow-hidden">
@@ -44,12 +55,12 @@ export default function Example() {
                Create a professional resumes and cover letters with our AI-powered tool, a free and open-source resume builder that helps you create professional resumes in minutes.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <button
+                onClick={useAuthRedirect}
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
-              </a>
+              </button>
               <a href="#" className="text-sm/6 font-semibold text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
