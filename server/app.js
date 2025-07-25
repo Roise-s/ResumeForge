@@ -1,11 +1,18 @@
+require('dotenv').config() // Load environment variables from .env file
 const express = require('express')
 const app = express()
-const port = 3000
+const mongoose = require('mongoose');
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+const workoutRoutes = require('./routes/workout')
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+app.get('/', workoutRoutes)
+
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => {
+        app.listen(process.env.PORT, () => {
+            console.log(`Example app listening on port ${process.env.PORT}`)
+        })
+    })
+    .catch((error) => {
+        console.log('Error connecting to MongoDB:', error)
+    })
