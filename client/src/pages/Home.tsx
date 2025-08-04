@@ -1,15 +1,10 @@
-import Footer from "@/sections/Footer"
-import Header from "@/sections/Header"
-import Main from "@/sections/Main"
-
+import { Badge } from "@/components/ui/badge"
 
 const Home = () => {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <div className="min-h-screen bg-gray-100">
+     <Badge />
+    </div>
   )
 }
 

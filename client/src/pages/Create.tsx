@@ -1,14 +1,11 @@
-import { useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
-import Login from "./Login";
+import { useNavigate } from 'react-router-dom';
 
 export default function Example() {
-  const navigate = useNavigate();
+  const useBtn = () => {
+    const navigate = useNavigate();
 
-  const useAuthRedirect = () => {
-    const token = Cookies.get("jwt");
-    if (!token) {
-      navigate("/login");
+    return () => {
+      navigate('/Home');
     }
   }
 
@@ -56,7 +53,8 @@ export default function Example() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <button
-                onClick={useAuthRedirect}
+                onClick={useBtn()}
+                type="button"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
