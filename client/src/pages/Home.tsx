@@ -1,47 +1,61 @@
 import { PaperClipIcon } from '@heroicons/react/20/solid'
+import { Textarea } from "@/components/ui/textarea"
+import { Input } from "@/components/ui/input"
 
 export default function Example() {
   return (
     <>
-      <header className="absolute inset-x-0 top-0 z-50 border-b-0 border-gray-200 bg-white shadow-sm">
+      <header className="sticky top-0 inset-x-0 z-50 border-b-0 border-gray-200 bg-white shadow-sm">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Resume Forge AI</span>
             </a>
           </div>
         </nav>
       </header>
 
-      <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white min-h-screen mt-24'>
+      <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white min-h-screen mt-12'>
       <div className="px-4 sm:px-0">
-        <h3 className="text-base/7 font-semibold text-gray-900">Applicant Information</h3>
-        <p className="mt-1 max-w-2xl text-sm/6 text-gray-500">Personal details and application.</p>
+        <h3 className="text-base/7 font-semibold text-gray-900">Job Description</h3>
+        <p className="mt-1 max-w-2xl text-sm/6 text-gray-500">To get started, kindly submit the required information. <br />Feel free to extract the details below from the LinkedIn job listing. </p>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm/6 font-medium text-gray-900">Full name</dt>
-            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">Margot Foster</dd>
+            <dt className="text-sm/6 font-medium text-gray-900">Company name</dt>
+            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+              <Input placeholder="e.g HIREXE, LexisNexis Legal or Motorola Solutions" />
+            </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm/6 font-medium text-gray-900">Application for</dt>
-            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">Backend Developer</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm/6 font-medium text-gray-900">Email address</dt>
-            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">margotfoster@example.com</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm/6 font-medium text-gray-900">Salary expectation</dt>
-            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">$120,000</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm/6 font-medium text-gray-900">About</dt>
             <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-              Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-              qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
-              pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
+              <Input placeholder="e.g Back End Developer, Front End Developer or Full Stack Developer" />
+            </dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm/6 font-medium text-gray-900">Job Description</dt>
+            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+              <Textarea placeholder="Paste the job description here" className="h-48" />
+            </dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm/6 font-medium text-gray-900">Requirements</dt>
+            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+              <Textarea placeholder="Paste the requirements here" className="h-48" />
+            </dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm/6 font-medium text-gray-900">Responsibilities</dt>
+            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+              <Textarea placeholder="Paste the responsibilities here" className="h-48" />
+            </dd>
+          </div>
+          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt className="text-sm/6 font-medium text-gray-900">About the job</dt>
+            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+              <Textarea placeholder="Provide any supplementary information in this field." className="h-48" />
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -58,7 +72,7 @@ export default function Example() {
                   </div>
                   <div className="ml-4 shrink-0">
                     <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                      Download
+                      Upload
                     </a>
                   </div>
                 </li>
@@ -72,7 +86,7 @@ export default function Example() {
                   </div>
                   <div className="ml-4 shrink-0">
                     <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                      Download
+                      Upload
                     </a>
                   </div>
                 </li>
