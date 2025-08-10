@@ -1,6 +1,7 @@
 import { PaperClipIcon } from '@heroicons/react/20/solid'
 import { Textarea } from "@/components/ui/textarea"
 import { Input } from "@/components/ui/input"
+import UploadPdfButton from '@/components/cnFile/UploadPdfButton'
 
 export default function Example() {
   return (
@@ -71,9 +72,7 @@ export default function Example() {
                     </div>
                   </div>
                   <div className="ml-4 shrink-0">
-                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                      Upload
-                    </a>
+                    <UploadPdfButton />
                   </div>
                 </li>
                 <li className="flex items-center justify-between py-4 pr-5 pl-4 text-sm/6">
@@ -85,9 +84,7 @@ export default function Example() {
                     </div>
                   </div>
                   <div className="ml-4 shrink-0">
-                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                      Upload
-                    </a>
+                    <UploadPdfButton />
                   </div>
                 </li>
               </ul>
