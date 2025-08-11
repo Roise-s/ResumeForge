@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 20px;
+  border-top: 1px solid #eaeaea;
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

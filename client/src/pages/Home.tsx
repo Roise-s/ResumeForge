@@ -2,6 +2,7 @@ import { PaperClipIcon } from '@heroicons/react/20/solid'
 import { Textarea } from "@/components/ui/textarea"
 import { Input } from "@/components/ui/input"
 import UploadPdfButton from '@/components/cnFile/UploadPdfButton'
+import Footer from '@/components/cnFile/Footer'
 
 export default function Example() {
   return (
@@ -90,9 +91,15 @@ export default function Example() {
               </ul>
             </dd>
           </div>
+
+          <button type="submit" className="mt-6 inline-flex items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer">
+            submit
+          </button>
         </dl>
       </div>
-    </div>
+      </div>
+
+      <Footer />
     </>
 
     
