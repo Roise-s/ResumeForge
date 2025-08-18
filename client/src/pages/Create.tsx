@@ -5,7 +5,15 @@ export default function Example() {
     const navigate = useNavigate();
 
     return () => {
-      navigate('/Home');
+      navigate('/create'); // Adjust the path as needed
+    }
+  }
+
+  const useLearnMore = () => {
+    const navigate = useNavigate();
+
+    return () => {
+      navigate('/learn-more'); // Adjust the path as needed
     }
   }
 
@@ -59,9 +67,9 @@ export default function Example() {
               >
                 Get started
               </button>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">
+              <button onClick={useLearnMore()} className="text-sm/6 font-semibold text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
